@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  /* box-sinzing: border-box -> define o tamanho do elemento, considerando seu margin e padding */
   box-sizing: border-box;
 }
 
