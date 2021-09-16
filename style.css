@@ -66,3 +66,7 @@ footer {
   font-style: italic;
   margin: 50px;
 }
+
+/* 'rem', é a medida do elemento, em relação ao tamanho dado a seu elemento raiz, quase sempre é o <html> */
+/* 'vw' e 'vh', são medidas baseadas no tamanho da viewport, ou seja, tamanho da tela que estão sendo exibidas, 
+    equivalem a 1/100 da altura da viewport */
