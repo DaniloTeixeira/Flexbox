@@ -28,6 +28,7 @@ header h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  /* gap -> propriedade do Grid para aplicar espaçamento entre os items de um bloco */
   gap: 2vw;
 }
 
@@ -36,20 +37,23 @@ header h1 {
   height: 250px;
   border: 10px solid white;
   box-shadow: 5px 5px 5px black;
+  /* flex-grow -> define a habilidade de um item flex crescer em relação aos outros dentro do mesmo container */
   flex-grow: 1;
   transition: transform 0.3s linear;
+  /* filter:grayscale -> deixa a imagem em preto e branco */
   filter: grayscale(100%);
 }
 
 .container-item img {
   width: 100%;
   height: 100%;
+  /* object-fit: cover -> ajusta a imagem, para que preencha todo o container, sem distorcer */
   object-fit: cover;
 }
 
 .container-item:hover {
+  /* transform -> aumenta o item de tamanho */
   transform: scale(1.1);
-  filter: none;
   border: 10px solid white;
   box-shadow: 5px 5px 5px green;
 }
