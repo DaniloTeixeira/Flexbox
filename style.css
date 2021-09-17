@@ -6,11 +6,11 @@
 }
 
 body {
-  background-color: seashell;
+  background-color: darkslateblue;
 }
 
 header {
-  background-image: linear-gradient(to top, green, black);
+  background-image: linear-gradient(to top, darkslateblue, black);
   box-shadow: inset 0 0 2em black, 0 0 2em black;
   margin-bottom: 30px;
 }
@@ -56,7 +56,8 @@ header h1 {
   /* transform -> aumenta o item de tamanho */
   transform: scale(1.1);
   border: 10px solid white;
-  box-shadow: 5px 5px 5px green;
+  box-shadow: 5px 5px 5px black;
+  filter: none;
 }
 
 footer {
