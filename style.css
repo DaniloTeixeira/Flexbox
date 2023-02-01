@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background-image: linear-gradient(to top, green, black);
+  background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(0, 70, 128));
   box-shadow: inset 0 0 2em black, 0 0 2em black;
   margin-bottom: 30px;
 }
@@ -18,7 +18,7 @@ header {
 header h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3rem;
-  color: white;
+  color: #f1f1f1;
   text-align: center;
   width: 100%;
   padding: 50px;
@@ -36,13 +36,13 @@ header h1 {
 .container-item {
   width: 350px;
   height: 250px;
-  border: 10px solid white;
+  border: 10px solid #f1f1f1;
   box-shadow: 5px 5px 5px black;
   /* flex-grow -> define a habilidade de um item flex crescer em relação aos outros dentro do mesmo container */
   flex-grow: 1;
-  transition: transform 0.3s linear;
+  transition: transform 0.3s ease-in-out;
   /* filter:grayscale -> deixa a imagem em preto e branco */
-  filter: grayscale(100%);
+  filter: opacity(50%);
 }
 
 .container-item img {
@@ -54,10 +54,11 @@ header h1 {
 
 .container-item:hover {
   /* transform -> aumenta o item de tamanho */
-  transform: scale(1.1);
+  transform: scale(1.03);
   border: 10px solid white;
-  box-shadow: 5px 5px 5px green;
+  box-shadow: 5px 5px 5px rgba(255,255,255,0.5);
   filter: none;
+  transition: transform 0.3s ease-in-out;
 }
 
 footer {
@@ -66,6 +67,7 @@ footer {
   text-align: center;
   font-style: italic;
   margin: 50px;
+  color: #f1f1f1
 }
 
 /* 'rem', é a medida do elemento, em relação ao tamanho dado a seu elemento raiz, quase sempre é o <html> */
